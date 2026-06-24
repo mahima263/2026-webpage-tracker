@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,7 +9,9 @@
     <!-- Fonts: Fraunces (display) · Inter (body) · JetBrains Mono (numerals) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap"
+        rel="stylesheet" />
 
     <!-- Font Awesome 6 (free) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
@@ -76,6 +79,7 @@
             position: relative;
             overflow: hidden;
         }
+
         .header::before {
             content: "";
             position: absolute;
@@ -83,6 +87,7 @@
             background: radial-gradient(420px 220px at 100% 0%, rgba(210, 166, 76, 0.22), transparent 70%);
             pointer-events: none;
         }
+
         .header>* {
             position: relative;
             z-index: 1;
@@ -99,6 +104,7 @@
             gap: 0.6rem;
             margin-bottom: 0.55rem;
         }
+
         .eyebrow .dash {
             width: 26px;
             height: 1px;
@@ -113,6 +119,7 @@
             flex-wrap: wrap;
             gap: 1rem;
         }
+
         .header-title h1 {
             font-family: "Fraunces", serif;
             font-size: 2.15rem;
@@ -120,6 +127,7 @@
             letter-spacing: -0.4px;
             line-height: 1.05;
         }
+
         .header-title .sub {
             font-size: 0.86rem;
             opacity: 0.74;
@@ -138,10 +146,12 @@
             gap: 0.55rem;
             white-space: nowrap;
         }
+
         .developer-badge i {
             color: var(--gold);
             font-size: 0.85rem;
         }
+
         .developer-badge .role {
             opacity: 0.62;
             font-weight: 400;
@@ -156,19 +166,23 @@
             border-top: 1px solid rgba(255, 255, 255, 0.12);
             flex-wrap: wrap;
         }
+
         .stat {
             display: flex;
             flex-direction: column;
         }
+
         .stat .num {
             font-family: "JetBrains Mono", monospace;
             font-size: 1.35rem;
             font-weight: 600;
             line-height: 1;
         }
+
         .stat .num.accent {
             color: var(--gold);
         }
+
         .stat .lbl {
             font-size: 0.66rem;
             text-transform: uppercase;
@@ -182,12 +196,14 @@
             padding: 1.4rem 2.5rem 2rem 2.5rem;
             overflow-x: auto;
         }
+
         .project-table {
             width: 100%;
             border-collapse: collapse;
             font-size: 0.9rem;
             min-width: 540px;
         }
+
         .project-table thead th {
             text-align: left;
             padding: 0.7rem 1rem 0.7rem 0;
@@ -199,13 +215,16 @@
             border-bottom: 1.5px solid var(--line);
             white-space: nowrap;
         }
+
         .project-table tbody tr {
             border-bottom: 1px solid var(--line-soft);
             transition: background 0.15s ease;
         }
+
         .project-table tbody tr:last-child {
             border-bottom: none;
         }
+
         .project-table tbody tr:hover {
             background: var(--row-hover);
         }
@@ -229,6 +248,7 @@
             width: 92px;
             white-space: nowrap;
         }
+
         .month-badge {
             display: inline-block;
             background: #f3ece0;
@@ -243,6 +263,7 @@
         .name-cell {
             font-weight: 500;
         }
+
         .name-link {
             display: inline-flex;
             align-items: center;
@@ -252,17 +273,21 @@
             font-weight: 600;
             transition: color 0.15s ease;
         }
+
         .name-link:hover {
             color: var(--maroon-900);
         }
+
         .name-link:hover .arrow {
             transform: translate(1px, -1px);
         }
+
         .name-link .arrow {
             font-size: 0.6rem;
             opacity: 0.55;
             transition: transform 0.15s ease;
         }
+
         .name-plain {
             color: var(--text);
             font-weight: 500;
@@ -272,6 +297,7 @@
             width: 110px;
             white-space: nowrap;
         }
+
         .status {
             display: inline-flex;
             align-items: center;
@@ -281,22 +307,27 @@
             font-size: 0.68rem;
             font-weight: 600;
         }
+
         .status .dot {
             width: 6px;
             height: 6px;
             border-radius: 50%;
         }
+
         .status.live {
             color: var(--live);
             background: var(--live-bg);
         }
+
         .status.live .dot {
             background: var(--live);
         }
+
         .status.pending {
             color: var(--pending);
             background: var(--pending-bg);
         }
+
         .status.pending .dot {
             background: var(--pending);
         }
@@ -306,19 +337,24 @@
             .header {
                 padding: 1.7rem 1.5rem 1.3rem 1.5rem;
             }
+
             .header-title h1 {
                 font-size: 1.65rem;
             }
+
             .header-top {
                 flex-direction: column;
                 align-items: flex-start;
             }
+
             .developer-badge {
                 align-self: flex-start;
             }
+
             .header-meta {
                 gap: 1.8rem;
             }
+
             .table-wrapper {
                 padding: 1rem 1.2rem 1.5rem 1.2rem;
             }
@@ -330,33 +366,43 @@
             transform: translateY(6px);
             animation: fadeUp 0.34s forwards;
         }
+
         .project-table tbody tr:nth-child(1) {
             animation-delay: 0.03s;
         }
+
         .project-table tbody tr:nth-child(2) {
             animation-delay: 0.06s;
         }
+
         .project-table tbody tr:nth-child(3) {
             animation-delay: 0.09s;
         }
+
         .project-table tbody tr:nth-child(4) {
             animation-delay: 0.12s;
         }
+
         .project-table tbody tr:nth-child(5) {
             animation-delay: 0.15s;
         }
+
         .project-table tbody tr:nth-child(6) {
             animation-delay: 0.18s;
         }
+
         .project-table tbody tr:nth-child(7) {
             animation-delay: 0.21s;
         }
+
         .project-table tbody tr:nth-child(8) {
             animation-delay: 0.24s;
         }
+
         .project-table tbody tr:nth-child(9) {
             animation-delay: 0.27s;
         }
+
         @keyframes fadeUp {
             to {
                 opacity: 1;
@@ -369,18 +415,21 @@
             outline-offset: 3px;
             border-radius: 5px;
         }
+
         @media (prefers-reduced-motion: reduce) {
             .project-table tbody tr {
                 animation: none;
                 opacity: 1;
                 transform: none;
             }
+
             * {
                 transition: none !important;
             }
         }
     </style>
 </head>
+
 <body>
 
     <div class="container">
@@ -429,15 +478,19 @@
     <!--  link: "#" means no link yet. live: true => IITK live page.  -->
     <!-- ============================================================ -->
     <script>
-        (function() {
+        (function () {
             'use strict';
 
             const projects = [
                 // April
-                { month: "April", name: "Professor S. K. Gupta — webpage", link: "https://iitk.ac.in/dora/prof-sk-gupta/prof-sk-gupta-mobile/",
-                    live: true },
-                { month: "April", name: "Professor S. K. Gupta — mobile", link: "https://iitk.ac.in/dora/prof-sk-gupta/prof-sk-gupta-mobile/",
-                    live: true },
+                {
+                    month: "April", name: "Professor S. K. Gupta — webpage", link: "https://iitk.ac.in/dora/prof-sk-gupta/prof-sk-gupta-mobile/",
+                    live: true
+                },
+                {
+                    month: "April", name: "Professor S. K. Gupta — mobile", link: "https://iitk.ac.in/dora/prof-sk-gupta/prof-sk-gupta-mobile/",
+                    live: true
+                },
                 // May
                 { month: "May", name: "IITKonverge", link: "https://iit-konverge.vercel.app/", live: false },
                 { month: "May", name: "GTU website — home page", link: "https://gtu-sand.vercel.app/", live: false },
@@ -446,16 +499,30 @@
                 { month: "June", name: "Class of 2001 — pledge", link: "https://pledge2001.vercel.app/", live: false },
                 { month: "June", name: "Arzoo Katiyar — memorial", link: "https://arzoo-five.vercel.app/", live: false },
                 { month: "June", name: "Synapse Nexus — research intelligence", link: "https://synapse-sepia-five.vercel.app/", live: false },
-                { month: "June", name: "Donor recognition — webpage", link: "https://donor-recognition.vercel.app/",
-                    live: false },
-                    { month: "June", name: "Class of 2012", link: "https://class-of-2012.vercel.app/",
-                    live: false },
-                    { month: "June", name: "Class of 1992", link: "https://class-of-1992.vercel.app/",
-                    live: false },
-                    { month: "June", name: "Class of 1981", link: "https://class-of-1981.vercel.app/",
-                    live: false },
-                    { month: "July", name: "KarvaanIndia", link: "",
-                    live: false }
+                {
+                    month: "June", name: "Donor recognition — webpage", link: "https://donor-recognition.vercel.app/",
+                    live: false
+                },
+                {
+                    month: "June", name: "Class of 2012", link: "https://class-of-2012.vercel.app/",
+                    live: false
+                },
+                {
+                    month: "June", name: "Class of 1992", link: "https://class-of-1992.vercel.app/",
+                    live: false
+                },
+                {
+                    month: "June", name: "Class of 1981", link: "https://class-of-1981.vercel.app/",
+                    live: false
+                },
+                {
+                    month: "June", name: "KarvaanIndia", link: "",
+                    live: false
+                },
+                {
+                    month: "June", name: "Pioneering Research and Innovation Awards", link: "",
+                    live: false
+                }
 
             ];
 
@@ -502,4 +569,5 @@
     </script>
 
 </body>
+
 </html>
